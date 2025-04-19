@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import LoadingBar from 'react-top-loading-bar'
 import React, { useState } from 'react'
@@ -22,7 +21,7 @@ const App = () => {
           <Route exact path='/' element={<Newsmain setProgress={setProgress} key={'general'} pagesize={pagesize} country="in" category="general" />} />
           <Route exact path='/sports' element={<Newsmain setProgress={setProgress} key={'sports'} pagesize={pagesize} country="in" category="sports" />} />
           <Route exact path='/science' element={<Newsmain setProgress={setProgress} key={'science'} pagesize={pagesize} country="in" category="science" />} />
-          <Route exact path='/entertainment' element={<Newsmain setProgress={setProgress} key={'movie'} pagesize={pagesize} country="in" category="entertainment" />} />
+          <Route exact path='/entertainment' element={<Newsmain setProgress={setProgress} key={'entertainment'} pagesize={pagesize} country="in" category="entertainment" />} />
           <Route exact path='/health' element={<Newsmain setProgress={setProgress} key={'health'} pagesize={pagesize} country="in" category="health" />} />
           <Route exact path='/technology' element={<Newsmain setProgress={setProgress} key={'technology'} pagesize={pagesize} country="in" category="technology" />} />
         </Routes>

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+
 const Newscomponent = (props) => {
-    let { title, description, imgUrl, newsUrl, date } =props;
+    let { title, description, imgUrl, newsUrl, date } = props;
     return (
         <div className="card" style={{
             width: "18rem",
@@ -11,9 +12,9 @@ const Newscomponent = (props) => {
                 <h5 className="card-title">{title}...</h5>
                 <p className="card-text">{description}...</p>
                 <p className="card-text"><small className="text-body-secondary">Published on {date}</small></p>
-                <a href={newsUrl} target="_blank" rel='noreferrer' className="btn btn-sm btn-primary">Read More</a>
+                <a href={newsUrl ? newsUrl: "https://www.reuters.com/world/middle-east/iran-supreme-leader-khamenei-praises-hamas-attack-israel-2023-10-10/"} target="_blank" rel='noreferrer' className="btn btn-sm btn-primary">Read More</a>
             </div>
         </div>
     )
 }
-export default Newscomponent
+export default Newscomponent;
